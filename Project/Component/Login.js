@@ -12,6 +12,7 @@ import {
 
 export default class Login extends Component{
     render(){
+        
         return(
             <View style={{flex:1,backgroundColor:'red', justifyContent:'center', alignItems:'center'}}>
                 <Image
@@ -30,13 +31,13 @@ export default class Login extends Component{
                     </View> 
                 </View>
                 <View style={{flexDirection:'row', marginTop: 20, width:220, height: 40, alignItems: 'center', justifyContent:'center',}}>
-                    <TouchableOpacity >
+                    <TouchableOpacity onPress={()=>this.navigation.navigate('Home')}>
                         <View style={{backgroundColor:'yellow',
                             padding:10, borderTopLeftRadius: 10, borderBottomLeftRadius: 10}}>
                             <Text>ĐĂNG NHẬP</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={()=>this.navigation.navigate('Register')}>
                         <View style={{backgroundColor:'gray', 
                             padding:10,  borderTopRightRadius: 10, borderBottomRightRadius: 10}}>
                             <Text>ĐĂNG KÍ</Text>
