@@ -6,10 +6,16 @@ import Login from './Login';
 import Register from './Register';
 export const StackNavigation = StackNavigator({
     Login:{
-        screen: Login
+        screen: Login,
+        navigationOptions:{
+            header: null,            
+        },
     },
     Home: {
         screen: Home,
+        navigationOptions:{
+            header: null,            
+        },
     },
     Register: {
         screen: Register
