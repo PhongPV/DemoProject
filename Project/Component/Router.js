@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import Home from './Home';
 import Login from './Login';
 import Register from './Register';
+import Tabbar from './Tabbar';
 export const StackNavigation = StackNavigator({
     Login:{
-        screen: Login,
-        navigationOptions:{
-            header: null,            
-        },
+        screen: Login,     
     },
     Home: {
-        screen: Home,
-        navigationOptions:{
-            header: null,            
-        },
+        screen: Tabbar,
     },
     Register: {
         screen: Register
     }
+},{
+    navigationOptions:{
+        header: null,            
+    },
 });
