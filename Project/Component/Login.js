@@ -43,12 +43,12 @@ export default class Login extends Component{
                     <View style={styles.button}>
                         <TouchableOpacity onPress={()=>navigate('Home')}>
                             <View style={styles.btnLogin}>
-                                <Text>ĐĂNG NHẬP</Text>
+                                <Text style={{color:'white'}>ĐĂNG NHẬP</Text>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={()=>navigate('Register')}>
                             <View style={styles.btnRegister}>
-                                <Text>ĐĂNG KÍ</Text>
+                                <Text style={{color:'white'}}>ĐĂNG KÍ</Text>
                             </View>
                         </TouchableOpacity>
                     </View>
